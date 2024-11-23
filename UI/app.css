@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  margin-left: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center aligns navbar contents */
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2b5cb8;
+  width: 140px;
+}
+
+/* Slider Section */
+.slider {
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  margin: 20px;
+  width: 1450px;
+  height: 300px;
+  overflow-x: scroll;
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  scroll-behavior: smooth;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #ddd transparent;
+}
+
+/* Card Styling */
+.card-wrapper {
+  flex: 0 0 calc(16.66% - 20px); /* Each card takes 1/6th of the width */
+  box-sizing: border-box;
+  text-align: center;
+  margin: 2px; /* Spacing between cards */
+  margin-bottom: 30px;
+  border: 1px solid #ddd; /* Box border */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9; /* Light background for cards */
+  transition: transform 0.3s;
+}
+
+.card-wrapper:hover {
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.custom-circle-image {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 2px solid #ddd; /* Adds border around the image */
+}
+
+.custom-circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dropzone Styling */
+.dropzone {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Table Styling */
+#classTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#classTable th, #classTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#classTable th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+}
+
